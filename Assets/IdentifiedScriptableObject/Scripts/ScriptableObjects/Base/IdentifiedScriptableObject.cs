@@ -8,7 +8,7 @@ namespace MyPack.IdentifiedSO.ScriptableObjects.Base
     {
     }
 
-    public class IdentifiedScriptableObject : ScriptableObject
+    public class IdentifiedScriptableObject : ScriptableObject, ISingle
     {
         public Guid Id;
 
@@ -42,7 +42,7 @@ namespace MyPack.IdentifiedSO.ScriptableObjects.Base
             _id = Id.ToString();
         }
 
-        public void Reset()
+        public void OnDuplicateDetected()
         {
             ResetId();
         }
