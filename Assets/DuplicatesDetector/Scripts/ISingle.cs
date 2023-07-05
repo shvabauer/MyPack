@@ -1,4 +1,7 @@
-public interface ISingle
+namespace MyPack.DuplicatesDetection
 {
-    public void OnDuplicateDetected();
+    public interface ISingle
+    {
+        public void OnDuplicateDetected();
+    }
 }
